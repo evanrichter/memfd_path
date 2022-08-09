@@ -3,6 +3,7 @@ use std::io::{Seek, SeekFrom, Write};
 use std::os::unix::io::AsRawFd;
 use std::path::{Path, PathBuf};
 
+#[derive(Debug)]
 pub struct InMemFilePath {
     _file: File,
     path: PathBuf,
